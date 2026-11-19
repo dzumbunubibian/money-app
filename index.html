@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyCredit Pay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MoneyCredit Pay</h1>
+        <p>Loan repayment calculator</p>
+    </header>
+
+    <main class="container">
+
+        <section class="calculator">
+            <h2>Calculate Your Loan</h2>
+
+            <form id="loanForm">
+
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" placeholder="Enter customer name" required>
+
+                <label for="loanAmount">Loan Amount ($)</label>
+                <input type="number" id="loanAmount" placeholder="Enter loan amount" min="1" required>
+
+                <label for="interestRate">Annual Interest Rate (%)</label>
+                <input type="number" id="interestRate" placeholder="Enter interest rate" min="0" step="0.01" required>
+
+                <label for="duration">Loan Duration (Months)</label>
+                <input type="number" id="duration" placeholder="Enter months" min="1" required>
+
+                <button type="submit">Calculate Repayment</button>
+
+            </form>
+        </section>
+
+        <section class="results" id="results">
+            <h2>Loan Summary</h2>
+            <p id="customer"></p>
+            <p id="principal"></p>
+            <p id="interest"></p>
+            <p id="total"></p>
+            <p id="monthly"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MoneyCredit Pay</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
